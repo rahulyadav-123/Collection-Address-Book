@@ -5,8 +5,9 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class AddressBookMain {
+
 	public void choose() {
-        MultipleAddressBook multiAddressBook = new MultipleAddressBook();
+        MultipleAddressBook multipleAddressBook = new MultipleAddressBook();
         while (true) {
             System.out.println("Enter \n 1. To add The new AddressBook\n 2. To do AddressBook functions\n " +
                     "3. To delete the AddressBook\n 4. To Print the AddressBook\n 5. To Print the contacts in AddressBook\n " + 
@@ -15,29 +16,29 @@ public class AddressBookMain {
             int choice = scanner.nextInt();
             switch (choice) {
                 case 1:
-                    multiAddressBook.addAddressBook();
+                    multipleAddressBook.addAddressBook();
                     break;
                 case 2:
-                    multiAddressBook.addressBookFunctions();
+                    multipleAddressBook.addressBookFunctions();
                     break;
                 case 3:
-                    multiAddressBook.deleteBook();
+                    multipleAddressBook.deleteBook();
                     break;
                 case 4:
-                    multiAddressBook.printBook();
+                    multipleAddressBook.printBook();
                     break;
                 case 5:
-                    multiAddressBook.printContactsInBook();
+                    multipleAddressBook.printContactsInBook();
                     break;
                 case 6:
                     System.out.println("Enter Name of City: ");
                     String cityName = scanner.next();
-                    multiAddressBook.searchPersonByCity();
+                    multipleAddressBook.searchPersonByCity();
                     break;
                 case 7: 
                     System.out.println("Enter Name of State: ");
                     String stateName = scanner.next();
-                    multiAddressBook.searchPersonByCity();
+                    multipleAddressBook.searchPersonByCity();
                     break;
                 case 0:
                     System.exit(0);
